@@ -1,0 +1,47 @@
+---
+title: "Shijia Bian Coursera Week 4 HW"
+author: "Shijia Bian"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The is the Week 4 Homework of the Coursera Course *Build R Package*. This package mainly as two parts: functions and data.
+
+### Part I: Functions
+
+There are 5 functions in the packages.
+
+#### Function 1: fars_read
+
+This function is used to Read .csv file. This is a function that, by default, reads .csv file. If the file does not exist in the repository, the function will stop. If the file exists, the function will return the Data Frame Tbl of the .csv file.
+
+#### Function 2: make_filename
+
+This function is used to return String the name of the .csv.bz2 file. This is a function return the .csv.bz2 file name with the given year.
+
+#### Function 3: fars_read_years
+
+Parse column month and column year from the data set specified by year. This is a function returning the month and year column from the specified data set. The data set is specified by year, the year the data set is for. This function can also take a list or a vector of years.
+
+#### Function 4: fars_summarize_years
+
+The count of records for the month of the specified year. This is a function returning the data frame of monthly record counts for the specified year/years. The first column of the returned data frame is the month, the second column is the record counts of the corresponding month for the passed year/years.
+
+
+#### Function 5: fars_map_state
+
+The map with the state ploted on the map. This is a function of creating map, the map plots the location of the record on the mao for the specified state and year.
+
+### Part II: Data
+
+There are 3 data sets are lazy loaded with the package:
+
++accident_2013
+-accident_2014
++accident_2015
+
+These data are .csv file. The data is mainly used by the examples in the package. These data can be accessed by calling the name directly.
