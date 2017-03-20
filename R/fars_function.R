@@ -13,10 +13,10 @@
 #' @return return the .csv file in the format of Data Frame Tbl
 #'
 #' @examples
-#' fars_read(filename = "accident_2013.csv")
-#' fars_read("accident_2013.csv")
 #'
-#'Sys.sleep(6)
+#' fars_read(filename = "./data/accident_2013.csv")
+#' fars_read("./data/accident_2013.csv")
+#'
 #'
 #' @export
 fars_read <- function(filename) {
@@ -62,10 +62,11 @@ make_filename <- function(year) {
 #' nding to the \code{years} passed into the function
 #'
 #' @examples
+#' \dontrun{
 #' fars_read_years(list(2015, 2013))
 #' fars_read_years(c(2015, 2013, 2014))
 #' fars_read_years(2013)
-#'
+#' }
 #' @export
 fars_read_years <- function(years) {
   lapply(years, function(year) {
@@ -99,10 +100,11 @@ fars_read_years <- function(years) {
 #' month. The rest of the column of the monthly counts for the passed year/years
 #'
 #' @examples
+#' \dontrun{
 #' fars_summarize_years(list(2013, 2014))
 #' fars_summarize_years(c(2013, 2014))
 #' fars_summarize_years(2013)
-#'
+#' }
 #' @export
 fars_summarize_years <- function(years) {
   dat_list <- fars_read_years(years)
@@ -128,9 +130,10 @@ fars_summarize_years <- function(years) {
 #' and year
 #'
 #' @examples
+#' \dontrun{
 #' fars_map_state(state.num = 4, year = 2014)
 #' fars_map_state(5, 2013)
-#'
+#' }
 #' @export
 fars_map_state <- function(state.num, year) {
   filename <- make_filename(year)
