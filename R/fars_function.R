@@ -13,16 +13,9 @@
 #' @return return the .csv file in the format of Data Frame Tbl
 #'
 #' @examples
-<<<<<<< HEAD
 #' \dontrun{
 #' fars_read(filename = "accident_2013.csv")
 #' fars_read("accident_2013.csv")}
-=======
-#'
-#' fars_read(filename = "./data/accident_2013.csv")
-#' fars_read("./data/accident_2013.csv")
-#'
->>>>>>> c4a74ea5cbdff767b123448437fcd2a99ef71479
 #'
 #' @export
 fars_read <- function(filename) {
@@ -72,13 +65,8 @@ make_filename <- function(year) {
 #' \dontrun{
 #' fars_read_years(list(2015, 2013))
 #' fars_read_years(c(2015, 2013, 2014))
-<<<<<<< HEAD
 #' fars_read_years(2013)}
 #'
-=======
-#' fars_read_years(2013)
-#' }
->>>>>>> c4a74ea5cbdff767b123448437fcd2a99ef71479
 #' @export
 fars_read_years <- function(years) {
   lapply(years, function(year) {
@@ -115,13 +103,8 @@ fars_read_years <- function(years) {
 #' \dontrun{
 #' fars_summarize_years(list(2013, 2014))
 #' fars_summarize_years(c(2013, 2014))
-<<<<<<< HEAD
 #' fars_summarize_years(2013)}
 #'
-=======
-#' fars_summarize_years(2013)
-#' }
->>>>>>> c4a74ea5cbdff767b123448437fcd2a99ef71479
 #' @export
 fars_summarize_years <- function(years) {
   dat_list <- fars_read_years(years)
@@ -149,13 +132,8 @@ fars_summarize_years <- function(years) {
 #' @examples
 #' \dontrun{
 #' fars_map_state(state.num = 4, year = 2014)
-<<<<<<< HEAD
 #' fars_map_state(5, 2013)}
 #'
-=======
-#' fars_map_state(5, 2013)
-#' }
->>>>>>> c4a74ea5cbdff767b123448437fcd2a99ef71479
 #' @export
 fars_map_state <- function(state.num, year) {
   filename <- make_filename(year)
