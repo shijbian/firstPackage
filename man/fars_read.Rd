@@ -18,10 +18,10 @@ fars_read(filename)
 return the .csv file in the format of Data Frame Tbl
 }
 \examples{
+\dontrun{
 fars_read(filename = "accident_2013.csv")
 fars_read("accident_2013.csv")
-
-Sys.sleep(6)
+}
 
 }
 

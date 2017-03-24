@@ -19,9 +19,11 @@ the column year and column month parsed from the data frame correspo-
 nding to the \code{years} passed into the function
 }
 \examples{
+\dontrun{
 fars_read_years(list(2015, 2013))
 fars_read_years(c(2015, 2013, 2014))
 fars_read_years(2013)
+}
 
 }
 

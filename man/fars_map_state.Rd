@@ -19,8 +19,10 @@ a map, it plots the location of the record on the map for the specified state
 and year
 }
 \examples{
+\dontrun{
 fars_map_state(state.num = 4, year = 2014)
 fars_map_state(5, 2013)
+}
 
 }
 

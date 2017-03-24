@@ -19,9 +19,11 @@ a data frame: the first column of the returned data frame is the
 month. The rest of the column of the monthly counts for the passed year/years
 }
 \examples{
+\dontrun{
 fars_summarize_years(list(2013, 2014))
 fars_summarize_years(c(2013, 2014))
 fars_summarize_years(2013)
+}
 
 }
 

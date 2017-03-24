@@ -16,8 +16,9 @@ make_filename(year)
 return the .csv.bz2 file name with the given year
 }
 \examples{
+\dontrun{
 make_filename(year = 2015)
-make_filename(2015)
+make_filename(2015)}
 
 }
 
