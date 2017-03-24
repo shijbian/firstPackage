@@ -12,8 +12,7 @@
 #'
 #' @return return the .csv file in the format of Data Frame Tbl
 #'
-#' @examples
-#' \dontrun{
+#' @examples \dontrun{
 #' fars_read(filename = "accident_2013.csv")
 #' fars_read("accident_2013.csv")
 #' }
@@ -62,8 +61,7 @@ make_filename <- function(year) {
 #' @return the column year and column month parsed from the data frame correspo-
 #' nding to the \code{years} passed into the function
 #'
-#' @examples
-#' \dontrun{
+#' @examples \dontrun{
 #' fars_read_years(list(2015, 2013))
 #' fars_read_years(c(2015, 2013, 2014))
 #' fars_read_years(2013)
@@ -101,8 +99,7 @@ fars_read_years <- function(years) {
 #' @return a data frame: the first column of the returned data frame is the
 #' month. The rest of the column of the monthly counts for the passed year/years
 #'
-#' @examples
-#' \dontrun{
+#' @examples \dontrun{
 #' fars_summarize_years(list(2013, 2014))
 #' fars_summarize_years(c(2013, 2014))
 #' fars_summarize_years(2013)
@@ -132,8 +129,7 @@ fars_summarize_years <- function(years) {
 #' @return a map, it plots the location of the record on the map for the specified state
 #' and year
 #'
-#' @examples
-#' \dontrun{
+#' @examples \dontrun{
 #' fars_map_state(state.num = 4, year = 2014)
 #' fars_map_state(5, 2013)
 #' }
