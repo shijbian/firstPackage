@@ -15,7 +15,8 @@
 #' @examples
 #' \dontrun{
 #' fars_read(filename = "accident_2013.csv")
-#' fars_read("accident_2013.csv")}
+#' fars_read("accident_2013.csv")
+#' }
 #'
 #' @export
 fars_read <- function(filename) {
@@ -65,7 +66,8 @@ make_filename <- function(year) {
 #' \dontrun{
 #' fars_read_years(list(2015, 2013))
 #' fars_read_years(c(2015, 2013, 2014))
-#' fars_read_years(2013)}
+#' fars_read_years(2013)
+#' }
 #'
 #' @export
 fars_read_years <- function(years) {
@@ -103,7 +105,8 @@ fars_read_years <- function(years) {
 #' \dontrun{
 #' fars_summarize_years(list(2013, 2014))
 #' fars_summarize_years(c(2013, 2014))
-#' fars_summarize_years(2013)}
+#' fars_summarize_years(2013)
+#' }
 #'
 #' @export
 fars_summarize_years <- function(years) {
@@ -132,7 +135,8 @@ fars_summarize_years <- function(years) {
 #' @examples
 #' \dontrun{
 #' fars_map_state(state.num = 4, year = 2014)
-#' fars_map_state(5, 2013)}
+#' fars_map_state(5, 2013)
+#' }
 #'
 #' @export
 fars_map_state <- function(state.num, year) {
@@ -154,7 +158,8 @@ fars_map_state <- function(state.num, year) {
               xlim = range(LONGITUD, na.rm = TRUE))
     graphics::points(LONGITUD, LATITUDE, pch = 46)
   })
-}# Hello, world!
+}
+# Hello, world!
 #
 # This is an example function named 'hello'
 # which prints 'Hello, world!'.
